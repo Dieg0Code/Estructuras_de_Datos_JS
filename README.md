@@ -33,3 +33,28 @@ Hay muchos lenguajes de programación que ya tienen estructuras de datos constru
 ![arrays](https://static.platzi.com/media/user_upload/Captura%20de%20Pantalla%202020-12-23%20a%20la%28s%29%2018.54.55-92ed2a3b-7382-4a68-807c-4a4e96bafd4d.jpg)
 
 ![arrays estaticos](https://static.platzi.com/media/user_upload/Captura%20de%20Pantalla%202020-12-23%20a%20la%28s%29%2018.55.38-9a12566d-ccc8-4f22-aa0b-fe5cb8ca8148.jpg)
+
+## Strings
+
+Los Strings per se no son una estructura de datos, pero la forma en la que se guardan en memoria es como una estructura de datos.
+
+- **String inmutable** se refiere a que una vez definido no lo podemos cambiar.
+
+```javascript
+const saludo = "Hola";
+```
+
+- Cabe recalcar que en muchos lenguajes incluyendo JavaScript, los strings son inmutables
+  - para generar un cambio en el string sera necesario:
+    1. Tomar Todos los datos de los memory slots.
+    2. Buscar nuevos memory slots.
+    3. Pegar en los memory slots necesarios con los nuevos elementos.
+  - Hacer todos estos pasos puede llegar a ser un problema de performance.
+- Cuando generamos strings en JavaScript casi nunca tenemos que modificarlos.
+- Los strings se guardan como un array de memory slots.
+
+![ejemplo](https://static.platzi.com/media/user_upload/slides_estructuras_datos_js_page-0026-887fd846-664a-4beb-ba3b-07df1309ebbf.jpg)
+
+- Teniendo acceso a cada letra dela cadena definida.
+
+Los strings son inmutables, es decir que una vez definidos no podemos cambiar "letra por letra" sino que tendremos que tomar todos lo items y comenzar a realizar la operación deseada, esto tambien significa mayor esfuerzo de computo.
