@@ -58,3 +58,58 @@ const saludo = "Hola";
 - Teniendo acceso a cada letra dela cadena definida.
 
 Los strings son inmutables, es decir que una vez definidos no podemos cambiar "letra por letra" sino que tendremos que tomar todos lo items y comenzar a realizar la operación deseada, esto tambien significa mayor esfuerzo de computo.
+
+## Hash Tables
+
+![hash table en otros lenguajes](https://static.platzi.com/media/user_upload/Untitled%20%2811%29-3610c9fc-9a7e-4404-bd8a-b4934d3767f9.jpg)
+
+De inicio las hash tables son similares a los objetos ya que manejan cosas como las key o los value.
+
+![hash key, value](https://static.platzi.com/media/user_upload/Untitled%20%2810%29-42852b26-35e4-4f4f-8d6c-725d432a8c53.jpg)
+
+La diferencia entre una hash table a un objeto es un paso extra el cual es que se convierte en una caja negra que seria una hash function.
+
+### ¿Como funcionan?
+
+Esto es, generar un hash que se convierte en el address para poder acceder al valor de lo que estamos guardando.
+
+![como funcionan](https://static.platzi.com/media/user_upload/Untitled%20%289%29-9427b204-61f6-4046-bb88-5ab1497b57c3.jpg)
+
+### Metodos
+
+Insert → Insertar un elemento en la tabla
+
+search → buscar un elemento por key
+
+delete → borrar un elemento
+
+Colision de hash table
+
+Trabajar con has table aveces puede causar problemas
+
+En ocasiones pasar un key distinto me puede generar el mismo hash y eso quiere decir que pueden quedar dos elementos guardado en un mismo indice(bucket)
+
+No hay forma de evitarlo.
+
+### Similares a un JSON
+
+Básicamente una Hash Table es similar a un objeto JSON.
+
+La unica diferencia es que, a la "key" que tu le pases se le va a aplicar una función que convertirá esa key en una referencia de memoria que es en donde se guardarán los valores que tu les pases.
+
+Para obtener de regreso tus valores, tienes que usar esa misma key, que será convertida de nuevo en un hash con la referencia de memoria en donde están guardados tus valores y te los devolverá.
+
+![gif](https://media4.giphy.com/media/qvEkzFvba7v6u3vKbo/giphy.gif)
+
+### Funcionan similar a un array
+
+Las Hash Table funcionan similar a un Array, solo que en vez de índices numéricos se tienen índices o keys en caracteres, entonces es necesario una función intermedia que convierte el key en caracteres en índice numérico.
+
+![similar a array](https://static.platzi.com/media/user_upload/8-hash-table-fe7079de-8834-41d5-b18f-ce58bae91844.jpg)
+
+### Colisiones de Hashes
+
+En ocasiones, pasar un valor distinto, me puede generar un mismo hash, lo que produce dos elementos guardados en un mismo bucket. Hash Tables funciona así, dependiendo de los buckets disponibles o libres, es la forma que va a regresar el Hash para guardar la información. Es casi imposible evitar las colisiones.
+Es importante aprender cómo tratar una colisión.
+
+La forma de tratar esta colision puede ser otra estructura de datos llamada "linked list".
