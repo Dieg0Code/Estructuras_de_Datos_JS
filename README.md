@@ -172,3 +172,19 @@ Un elemento de una linked list (singly) solo conoce al siguiente elemento, pero 
 ![gif singly linked list](https://media1.giphy.com/media/wYy64451SwaYLfznHE/giphy.gif)
 
 *Pensemos en las Singly Linked List como un edificio con escaleras donde cada piso sería un Nodo. Si quisiera ir del piso 1 al piso 5, estoy obligado a pasar por los pisos 2, 3 y 4. Además siempre debo entrar por el primer piso.*
+
+## Construyendo una Singly Linked List
+
+![singly linked list](https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%202020-12-23%20222805-b04f2bfd-b268-4f4c-96d4-bf45bbbf1188.jpg)
+
+Las Linked List guardan los nodos aleatoriamente en la memoria, sí, aunque esta estructura de datos solo conoce a su siguiente nodo, los nodos pueden estar guardados aleatoriamente en la memoria porque cada nodo sabe cuál es la referencia de memoria del siguiente nodo.
+
+Hay dos formas en las que se puede accesar a la información.
+
+- **Acceso Aleatorio**: Se puede acceder al n-ésimo elemento de una lista de elementos en un tiempo constante. Ejemplo de esto son los arreglos, ya que como se ha mencionado en el curso, se reservan espacios de memorias seguidos (sean arreglos dinámicos o no). Por esto, se puede acceder directamente a las posición 3 de un arreglo (``myArray[2]``).
+
+![acceso aleatorio](https://static.platzi.com/media/user_upload/Screen%20Shot%202021-02-15%20at%207.04.37%20PM-35abde96-4f52-41e4-a549-300dc12021cc.jpg)
+
+- **Acceso Secuencial**: En este caso, un grupo de elementos es accedido en un predeterminado orden secuencial. Las linked list son ejemplo de esto. Como no están de manera continua en memoria, para acceder a un nodo en particular, debemos recorrer la lista, accediendo a los apuntadores del siguiente elemento. Es decir, si quiero acceder a la posición 3 de la lista, debo pasar por la posición 1, luego a la 2 y ahí llego a la 3.
+
+![acceso secuencial](https://static.platzi.com/media/user_upload/Screen%20Shot%202021-02-15%20at%207.07.18%20PM-28e30e5b-6463-4bc6-b513-48b3908b700c.jpg)
