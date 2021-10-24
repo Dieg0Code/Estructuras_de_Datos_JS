@@ -129,3 +129,46 @@ El hash se suele usar mucho al momento de encriptar contraseñas, y la forma de 
 ## ¿Como se llega a cada elemento dentro de los buckets?
 
 ![ejemplo](https://static.platzi.com/media/user_upload/cap3-0f05f4a2-30c6-46bd-a4f3-67f925ac2f24.jpg)
+
+## Linked List
+
+**Linked List** son simplemente un conjunto de nodos ordenados que contienen los valores que necesitemos (numbers, strings, boolean, etc). Cada uno tiene un valor y una referencia a un siguiente nodo.
+
+![linked list](https://static.platzi.com/media/user_upload/slides_estructuras_datos_js_page-0038-df338d63-caf1-4bcb-86c2-f8cd72e9db73.jpg)
+
+- Esta es la anatomía de un linked list.
+- Tenemos el nodo principal o cabeza, luego tenemos diferentes nodos y un nodo final o cola.
+- Cada flecha es su conexión.
+- Existen dos tipos de Linked List en este caso usaremos solo la **Singly Linked List**.
+
+### Métodos
+
+- Prepend → Agrega un nodo al inicio.
+- Append → Agrega un nodo al final.
+- Lookup/Search → Busca un nodo.
+- Insert → Inserta un nodo en una posición específica.
+- Delete → Elimina un nodo.
+
+### Singly Linked List
+
+- Un nodo se compone de dos factores.
+  - Valor
+  - valor del siguiente nodo
+
+![singly linked list](https://static.platzi.com/media/user_upload/slides_estructuras_datos_js_page-0041-11c13a63-e3f2-4978-af91-aa1281aa6d9d.jpg)
+
+- Si deseamos llegar a algún lugar, debemos empezar del Head hasta el lugar especificado.
+- No podemos regresar una vez hemos avanzado en un lugar, sera necesario volver hacer otro recorrido.
+- Lo característico de esta lista es que sus valores están relacionados con su nodo actual y el siguiente.
+
+Un singly linked list es aquella que en sus nodos están su valor actual y la relación con el siguiente, si deseamos acceder a un determinado valor debemos recorrer si o si todos los elementos anteriores para llegar al lugar deseado.
+
+### Pueden ser un poco lentas
+
+Una linked listed suele tener la particularidad de “ser un poco lenta” en la búsqueda por el hecho de que tiene que recorrer absolutamente todos los elementos de izquierda a derecha en busca de ese valor.
+
+Un elemento de una linked list (singly) solo conoce al siguiente elemento, pero no conoce al anterior, es por eso que no te puedes regresar, por eso, si necesitas conocer el valor de un nodo anterior no te queda otra opción más que terminar tu búsqueda y volver a iniciarla. Por eso una linked list no sería la mejor opción para hacer búsqueda de elementos que dependen de otro elemento de la misma linked list
+
+![gif singly linked list](https://media1.giphy.com/media/wYy64451SwaYLfznHE/giphy.gif)
+
+*Pensemos en las Singly Linked List como un edificio con escaleras donde cada piso sería un Nodo. Si quisiera ir del piso 1 al piso 5, estoy obligado a pasar por los pisos 2, 3 y 4. Además siempre debo entrar por el primer piso.*
