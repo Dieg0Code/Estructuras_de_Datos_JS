@@ -194,3 +194,25 @@ Hay dos formas en las que se puede accesar a la información.
 Una doubly linked list tiene el mismo comportamiento que una simply linked list, pero con la particularidad de que esta **SI** puede regresar. Aún necesita ir moviéndose una por una, pero ahora si lo desea puede regresar porque ya conoce quién es su elemento anterior y también quién es el siguiente, es decir, ya no es necesario repetir el ciclo.
 
 ![doubly linked list](https://media0.giphy.com/media/7z2LofJrFuKw2VBKP3/giphy.gif)
+
+Una **lista doblemente enlazada** es una estructura de datos que consiste en un conjunto de nodos enlazados secuencialmente. Cada nodo contiene tres campos, dos para los llamados enlaces, que son referencias al nodo siguiente y al anterior en la secuencia de nodos, y otro más para el almacenamiento de la información
+
+- La singly solo tiene un canal.
+- La doubly se caracteriza por tener dos direcciones.
+
+![doubly linked list](https://static.platzi.com/media/user_upload/slides_estructuras_datos_js_page-0048-79182a24-5d63-4cce-9c4e-b57a1603b0f7.jpg)
+
+- Tiene tres valores, los que ya conocemos
+  - Value
+  - Next
+- Lo que la caracteriza es el valor **previo**
+  - Prev
+- Esto nos ayuda si es que deseamos buscar un valor en particular nos evita volver a recorrer toda la estructura. Es decir, que para buscar un valor es más rápido.
+
+- La forma en la que se guarda en memoria los valores es similar a la singly linked list, pero con la particularidad de que los nodos tienen dos direcciones.
+
+![cómo se guardan](https://static.platzi.com/media/user_upload/slides_estructuras_datos_js_page-0049-773eaa22-d463-4820-a8f0-f915cb4aef31.jpg)
+
+- De un slot a otro, solo que ahora podemos regresar mediante el pointer **prev**
+
+Las doubly linked list son aquellas que tiene dos canales de punteros, el anterior (prev) y el siguiente (next).
