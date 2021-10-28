@@ -35,6 +35,7 @@ class MySinglyLinkedList {
         this.length = 1;
     }
 
+    // agrega un nuevo nodo al final de la lista
     append(value) {
         const newNode = new Node(value);
         this.tail.next = newNode;
@@ -43,6 +44,7 @@ class MySinglyLinkedList {
         return this;
     }
 
+    // agrega un nuevo nodo al inicio de la lista
     prepend(value) {
         const newNode = new Node(value);
         newNode.next = this.head;
@@ -77,6 +79,19 @@ class MySinglyLinkedList {
         }
 
         return currentNode;
+    }
+
+    remove(index) {
+        if (index === 0) {
+            this.head = this.head.next;
+        } else {
+            const firstPointer = this.getTheIndex(index - 1);
+            const secondPointer = firstPointer.next;
+            firstPointer.next = secondPointer.next;
+        }
+
+        this.length--;
+        return this;
     }
 }
 
