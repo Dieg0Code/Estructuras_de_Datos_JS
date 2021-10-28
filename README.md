@@ -188,3 +188,9 @@ Hay dos formas en las que se puede accesar a la información.
 - **Acceso Secuencial**: En este caso, un grupo de elementos es accedido en un predeterminado orden secuencial. Las linked list son ejemplo de esto. Como no están de manera continua en memoria, para acceder a un nodo en particular, debemos recorrer la lista, accediendo a los apuntadores del siguiente elemento. Es decir, si quiero acceder a la posición 3 de la lista, debo pasar por la posición 1, luego a la 2 y ahí llego a la 3.
 
 ![acceso secuencial](https://static.platzi.com/media/user_upload/Screen%20Shot%202021-02-15%20at%207.07.18%20PM-28e30e5b-6463-4bc6-b513-48b3908b700c.jpg)
+
+## Doubly Linked List
+
+Una doubly linked list tiene el mismo comportamiento que una simply linked list, pero con la particularidad de que esta **SI** puede regresar. Aún necesita ir moviéndose una por una, pero ahora si lo desea puede regresar porque ya conoce quién es su elemento anterior y también quién es el siguiente, es decir, ya no es necesario repetir el ciclo.
+
+![doubly linked list](https://media0.giphy.com/media/7z2LofJrFuKw2VBKP3/giphy.gif)
